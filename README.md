@@ -1,7 +1,9 @@
 Redcraft-Proxy 2.0
 =======================
 
-Redcraft Proxy is a fork of Travertine which add needed features to Travertine to make redcraft proxy system functioning
+Redcraft Proxy 2.0 is a fork of Travertine which add needed features to Travertine to make redcraft proxy system functioning.
+
+and Redcraft Proxy 1.0 is a private Bungeecord Fork
 
 Travertine
 =========
