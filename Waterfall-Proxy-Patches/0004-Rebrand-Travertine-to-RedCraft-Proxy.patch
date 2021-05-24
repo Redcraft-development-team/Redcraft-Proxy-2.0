@@ -1,0 +1,45 @@
+From f68b42340924b43303871d9a847e5b9133356d1a Mon Sep 17 00:00:00 2001
+From: abhiram <abhithegamer2019@gmail.com>
+Date: Mon, 24 May 2021 16:00:49 +0530
+Subject: [PATCH] Rebrand Travertine to RedCraft-Proxy
+
+
+diff --git a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
+index 3b0dff08..4924ebf5 100644
+--- a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
++++ b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
+@@ -547,13 +547,17 @@ public class BungeeCord extends ProxyServer
+     @Override
+     public String getName()
+     {
+-        return "Travertine";
++        // RedCraft-Proxy start - Rebrand Travertine
++        return "RedCraft-Proxy";
++        // RedCraft-Proxy end
+     }
+ 
+     @Override
+     public String getVersion()
+     {
+-        return ( BungeeCord.class.getPackage().getImplementationVersion() == null ) ? "unknown" : BungeeCord.class.getPackage().getImplementationVersion();
++        // RedCraft-Proxy start - Current Version of RedCraft Proxy (Rebrand Travertine)
++        return "2.0";
++        // RedCraft-Proxy end
+     }
+ 
+     public void reloadMessages()
+diff --git a/proxy/src/main/java/net/md_5/bungee/command/CommandBungee.java b/proxy/src/main/java/net/md_5/bungee/command/CommandBungee.java
+index 4e2c6129..254f0eda 100644
+--- a/proxy/src/main/java/net/md_5/bungee/command/CommandBungee.java
++++ b/proxy/src/main/java/net/md_5/bungee/command/CommandBungee.java
+@@ -16,6 +16,6 @@ public class CommandBungee extends Command
+     @Override
+     public void execute(CommandSender sender, String[] args)
+     {
+-        sender.sendMessage( ChatColor.BLUE + "This server is running Travertine version " + ProxyServer.getInstance().getVersion() + " by md_5" );
++        sender.sendMessage( ChatColor.translateAlternateColorCodes( '&', "&eThis server is running RedCraft-Proxy version &4" + ProxyServer.getInstance().getVersion() + " &eby RedCraft development team" ) );
+     }
+ }
+-- 
+2.26.2.windows.1
+
